@@ -4,7 +4,7 @@ function getRandom() {
 
 function output(cb) {
     let someNumber = cb();
-    return console.log(someNumber);
+    return setTimeout(function() { console.log(someNumber) }, 2000);
 }
 
 output(getRandom);
